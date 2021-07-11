@@ -1,16 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-export default function App() {
+export default function App({ name }) {
   return (
     <Router>
       <div>
+        <p>{name} is mounted</p>
         <nav>
           <ul>
             <li>
